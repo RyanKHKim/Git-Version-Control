@@ -4,8 +4,9 @@ Basic Source Controls
 cd ..
 cd documents\github
 git clone "https of repository without quotation marks"
+dir
 
-#configures working directory to github network
+#configures the directory to github network
 cd documents/github/repositoryname
 git init
 git config --user.email "ryankeehoon@gmail.com"
