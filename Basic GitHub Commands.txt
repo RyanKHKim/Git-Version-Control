@@ -1,0 +1,29 @@
+Basic Source Controls
+
+#clones github repository into a directory
+cd ..
+cd documents\github
+git clone "https of repository without quotation marks"
+
+#configures working directory to github network
+cd documents/github/repositoryname
+git init
+git config --user.email "ryankeehoon@gmail.com"
+
+#check status, add, commit, and push an untracked file from your computer to github
+git status  
+git add xyz.filetype
+git commit -m "message describing what you added or edited" 
+git push 
+
+#pulls from github to your computer
+git pull 
+
+#if there are multiple files you wanna push
+git add -A
+
+#shows a list of all git commands
+git
+
+#if you commit without a message (-m ".....") then you will enter a full commit editor, get out by pressing ESC and typing :x
+:x
