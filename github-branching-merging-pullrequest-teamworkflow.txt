@@ -12,8 +12,8 @@ git status
 git add -A
 git commit -m "your message"
 
-#before you make your pull request, go back to whatever branch you're merging from (e.g. "master"), and 
-check for recent changes and fix any conflicts between your branch and the main branch
+#before you make your pull request (git push), go back to whatever branch you're merging from (e.g. "master"), 
+and check for recent changes and fix any conflicts between your branch and the main branch
 git checkout master		#switching back to "master"
 git pull			#pulls in any recent changes from "master" branch
 git checkout feature1		#switching back to "feature1"
