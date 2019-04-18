@@ -4,12 +4,12 @@ Basic Source Controls
 cd ..
 cd documents\github
 git clone "https of repository without quotation marks"
-dir
+dir #shows directory
 
 #configures the directory to github network
 cd documents/github/repositoryname
 git init
-git config --user.email "ryankeehoon@gmail.com"
+git config --global user.email "ryankeehoon@gmail.com"
 
 #check status, add, commit, and push an untracked file from your computer to github
 git status  
