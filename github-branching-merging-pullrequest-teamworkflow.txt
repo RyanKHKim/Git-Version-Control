@@ -26,3 +26,6 @@ git commit -m "your message"
 
 #now you can push your branch and make a pull request
 git push			#your branch is now uploaded to github for a pull request
+
+
+#you can add commits after making a pull request for back-and-forth editing/changes with a peer
