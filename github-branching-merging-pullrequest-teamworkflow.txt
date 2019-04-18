@@ -1,0 +1,28 @@
+#how companies use github: you receive a feature request, make your own separate branch, code in your feature, 
+merge master back into it, and then push that to github to make a pull request, pull request gets peer-reviewed
+
+#branching: how to add a branch so you can do your own separate work from colleagues
+git branch 			#shows all branches, should only show "master" branch
+git branch feature1 		#adds branch "feature1"
+git branch 			#now you see master and feature1
+git checkout feature1 		#switches from current "master" branch to "feature1" branch
+
+#make changes to the code on your branch
+git status
+git add -A
+git commit -m "your message"
+
+#before you make your pull request, go back to whatever branch you're merging from (e.g. "master"), and 
+check for recent changes and fix any conflicts between your branch and the main branch
+git checkout master		#switching back to "master"
+git pull			#pulls in any recent changes from "master" branch
+git checkout feature1		#switching back to "feature1"
+git merge master		#takes all the changes from "master" and merges it to "feature1" branch
+				(merge may fail due to conflict; you want to makes changes and add your code
+				below theirs so merging can work)
+git status
+git add -A
+git commit -m "your message"
+
+#now you can push your branch and make a pull request
+git push			#your branch is now uploaded to github for a pull request
