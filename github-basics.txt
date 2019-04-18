@@ -6,22 +6,21 @@ cd documents\github
 git clone "https of repository without quotation marks"
 dir #shows directory
 
-#configures the directory to github network
+#configures the directory to github network, and pulls any recent changes from github to your computer
 cd documents/github/repositoryname
 git init
 git config --global user.email "ryankeehoon@gmail.com"
+git pull
 
-#check status, add, commit, and push an untracked file from your computer to github
+#check status, add, commit, a new or edited file from your computer to github
 git status  
 git add xyz.filetype
 git commit -m "message describing what you added or edited" 
 git push 
 
-#pulls from github to your computer
-git pull 
-
-#if there are multiple files you wanna push
+#if there are multiple files you want to commit and push
 git add -A
+
 
 #shows a list of all git commands
 git
