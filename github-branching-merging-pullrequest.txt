@@ -7,7 +7,7 @@ git branch feature1 		#adds branch "feature1"
 git branch 			#now you see master and feature1
 git checkout feature1 		#switches from current "master" branch to "feature1" branch
 
-#make changes to the code on your branch
+#make changes to the code on your branch then
 git status
 git add -A
 git commit -m "your message"

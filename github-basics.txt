@@ -1,29 +1,44 @@
 Basic Source Controls
 
-#clones github repository into a directory
-cd ..
-cd documents\github
-git clone "https of repository without quotation marks"
-dir #shows directory
-
-#configures the directory to github network, and pulls any recent changes from github to your computer
-cd documents/github/repositoryname
+#configuring personal directory to github network
+cd documents/github
 git init
 git config --global user.email "ryankeehoon@gmail.com"
+
+#clone github repository to personal directory
+cd documents/github
+git clone https://github.com/USERNAME/REPOSITORY.git
+
+#moving to another existing remote repository
+cd documents/github/REPOSITORYNAME
+git remote -v #verifies remote repository URL
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+git remote -v #verifies remote repository URL
+
+#pull any recent changes from github to your computer
+cd documents/github/REPOSITORYNAME
+git status
 git pull
 
 #check status, add, commit, a new or edited file from your computer to github
 git status  
 git add xyz.filetype
+git add -A #if there are multiple files you want to commit
 git commit -m "message describing what you added or edited" 
 git push 
 
-#if there are multiple files you want to commit and push
-git add -A
-
-
-#shows a list of all git commands
-git
 
 #if you commit without a message (-m ".....") then you will enter a full commit editor, get out by pressing ESC and typing :x
 :x
+
+#going back one directory or several directories
+cd ..
+cd ../..
+cd ../../..
+
+#showing directory contents
+dir #for windows
+ls #for mac/linux
+
+#shows a list of all git commands
+git
