@@ -1,1 +1,1 @@
-# GitHub Basics, Source Control Basics
+# GitHub and Source Control Basics
